@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Walkathon-Donations</title>
+</head>
+<body>
+  <header>
+    <h1>Walkathon Donations</h1>
+  </header>
+  <main class="container">
+    <form id="donor-form">
+      <fieldset>
+        <legend>Donor Form</legend>
+        <div class="donationForm" id="leftFields"> 
+          <label for="firstName">First name: </label>
+            <input type="text" name="firstName" required><br>
+          <label for="middleInitial">Middle initial: </label>
+            <input type="text" name="middleInitial"><br>
+          <label for="lastName">Last name: </label>
+            <input type="text" name="lastName" required><br>
+          <label for="addressField">Home address: </label>
+            <input type="text" name="addressField"><br>
+          <label for="phoneField">Telephone number: </label>
+            <input type="tel" name="phoneField" required><br>
+          <label for="emailField">E-mail address: </label>
+            <input type="email" name="emailField" required>
+        </div>
+        <div class="donationForm" id="rightFields">
+          <fieldset for="donation">
+            <legend>Donation Details</legend>
+            <label for="dollarAmnt">Amount of donation: </label>
+              <input type="number" id="dollarAmnt" name="donation"><br>
+              <fieldset>
+                <legend>Set amount, or pledge per lap?</legend>
+                <label for="setAmount">Single pre-set donation</label>
+                  <input type="radio" id="setAmount" name="donation"><br>
+                <label for="perLap">Pledging this amount per lap</label>
+                  <input type="radio" id="perLap" name="donation"><br>
+                </fieldset>
+          </fieldset>
+        </div>
+      </fieldset>
+    </form>
+    <div id="formBtns">
+      <button id="btnDonate">Donate!</button>
+      <button id="btnClear">Cancel</button>
+    </div>
+    <table id="donor-table">
+
+    </table>
+  </main>
+  <footer>
+    <div class="copyright">
+      <h3>single page applications / IIFEs and Bootstrap</h3>
+      <h4>&copy;rue.TH</h4>
+    </div>
+  </footer>
+</body>
+</html>
